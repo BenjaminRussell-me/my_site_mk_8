@@ -11,7 +11,7 @@ button {
   cursor: pointer;
   box-shadow: 0 0 3px 1px black;
   transition: 0.3s ease;
-  background: $interact_color;
+  background: $gradient;
 
   &:focus {
     outline: none;

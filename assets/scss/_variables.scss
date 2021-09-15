@@ -1,5 +1,9 @@
-$main_color: hsla(220, 40%, 10%, 1);
-$accent_color: hsla(196, 100%, 39%, 1);
+$main_color: hsla(220, 20%, 20%, 1);
+$accent_color: hsla(200, 80%, 50%, 1);
+$accent_color1: hsla(185, 80%, 50%, 1);
+$accent_color2: hsla(173, 80%, 50%, 1);
+$accent_color3: hsla(155, 80%, 50%, 1);
+$gradient: linear-gradient(45deg, $accent_color, $accent_color3);
 $interact_color: hsla(40, 100%, 50%, 1);
 $light_color: hsla(30, 30%, 95%, 1);
 

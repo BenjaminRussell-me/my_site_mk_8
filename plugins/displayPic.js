@@ -9,6 +9,7 @@ if (!Vue.__pic_mixin__) {
           const picture = require(`@/assets/img/${pic}`)
           return picture
         } catch (e) {
+          console.log(e)
           return false
         }
       },

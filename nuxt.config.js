@@ -38,7 +38,6 @@ export default {
   plugins: [
     { src: '~/plugins/noWidow.js' },
     { src: '~/plugins/displayPic.js' },
-    { src: '~/plugins/haaForm.js' },
     { src: '~/plugins/markdown.js' },
   ],
 

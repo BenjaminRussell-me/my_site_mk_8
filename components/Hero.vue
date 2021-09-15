@@ -7,23 +7,38 @@
           background: `url(${displayPic(content.portrait.src)})`,
         }"
       >
-        <span class="t4">{{ content.left }}</span>
+        <span class="t1">{{ content.left }}</span>
       </div>
       <div class="hero_right">
         <div class="text_holder">
-          <h1 class="t1">{{ noWidow(headlines.value[hlSet].headline) }}</h1>
-          <h2 class="t3 accent_text">
-            {{ noWidow(headlines.value[hlSet].subhead) }}
-          </h2>
-          <ul>
-            <li
-              v-for="(item, index) in content.blerb"
-              :key="`blerb${index}`"
-              class="t5"
-            >
-              {{ noWidow(item) }}
-            </li>
-          </ul>
+          <h1 class="t1">my name is Benjamin</h1>
+          <p class="t4 dates">
+            I have been a proffesional developer for
+            <span class="date"> {{ date_time.year }} years,</span>
+            <span class="date"> {{ date_time.month }} months,</span>
+            <span class="date"> {{ date_time.day }} days,</span>
+            <span class="date"> {{ date_time.hour }} hours,</span>
+            <span class="date">{{ date_time.min }} minutes </span> and
+            <span class="date"> {{ date_time.sec }} seconds.</span>
+          </p>
+          <div class="gotos">
+            <div class="gototext">
+              <span class="tp">learn more about me?</span>
+              <br />
+              <DynamicButton class="tp">Click here for about me</DynamicButton>
+            </div>
+
+            <div class="gototext">
+              <span class="tp"
+                >or maybe we skip all that <br />and go straight to e-mailing
+                😉</span
+              >
+              <br />
+              <DynamicButton class="tp"
+                >Click here to contact me
+              </DynamicButton>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -31,7 +46,23 @@
 </template>
 
 <script>
+import DynamicButton from './holders/Dynamic_Button.vue'
 export default {
+  components: {
+    DynamicButton,
+  },
+  data() {
+    return {
+      date_time: {
+        year: 0,
+        month: 0,
+        day: 0,
+        hour: 0,
+        min: 0,
+        sec: 0,
+      },
+    }
+  },
   computed: {
     content() {
       return this.$store.state.content.hero
@@ -41,6 +72,34 @@ export default {
     },
     hlSet() {
       return this.headlines.inUse
+    },
+  },
+  mounted() {
+    this.set_date()
+    window.setInterval(() => {
+      this.set_date()
+    }, 1000)
+  },
+
+  methods: {
+    set_date() {
+      const startDate = 1530628200000
+      const year = { secs: 31536000, name: 'year' }
+      const month = { secs: 2592000, name: 'month' }
+      const day = { secs: 86400, name: 'day' }
+      const hour = { secs: 3600, name: 'hour' }
+      const min = { secs: 60, name: 'min' }
+      const fullDate = [year, month, day, hour, min]
+      let seconds = Math.floor((new Date() - startDate) / 1000)
+
+      fullDate.forEach((d) => {
+        const interval = seconds / d.secs
+        if (interval > 1) {
+          this.date_time[d.name] = Math.floor(interval)
+          seconds = seconds - d.secs * Math.floor(interval)
+        }
+      })
+      this.date_time.sec = seconds
     },
   },
 }
@@ -76,7 +135,7 @@ section {
         margin: 0 0 3rem 0;
         width: 100%;
         background: rgba($accent_color, 0.5);
-        align-self: end;
+        align-self: center;
         text-align: center;
       }
     }
@@ -84,8 +143,9 @@ section {
       @include hero_sides;
 
       padding: 3rem 2rem 2rem 2rem;
-      background: $light_color;
+      background: $main_color;
       display: grid;
+      color: white;
       box-shadow: 0 -5px 3px 5px black;
       .text_holder {
         align-self: center;
@@ -102,6 +162,20 @@ section {
         border-bottom: 6px solid $main_color;
         box-shadow: none;
         padding: 1rem;
+      }
+      .date {
+        white-space: nowrap;
+        background: linear-gradient(to left, $accent_color, $accent_color3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-attachment: fixed;
+        color: $accent_color;
+      }
+      .gotos {
+        margin-top: $l-gap;
+        .gototext {
+          margin-top: $l-gap;
+        }
       }
     }
   }

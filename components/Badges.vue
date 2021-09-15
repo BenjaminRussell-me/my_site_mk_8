@@ -1,26 +1,28 @@
 <template>
-  <div ref="badges" class="wrapper">
-    <transition-group
-      id="badgesRow"
-      appear
-      :style="{ '--total': content.badges.length }"
-      name="badgePop"
-      tag="div"
-    >
-      <div
-        v-for="(img, index) in list"
-        :key="`badge${index}`"
-        :data-index="index"
-        class="badgeHolder"
-        :style="{ '--i': index }"
+  <section class="parent">
+    <div ref="badges" class="outer_wrapper">
+      <transition-group
+        id="badgesRow"
+        appear
+        :style="{ '--total': content.badges.length }"
+        name="badgePop"
+        tag="div"
       >
-        <div :class="`badge${index}`" class="badgeWrapper">
-          <img :src="getBadge(img.src)" alt="lawyer badges" />
-          <p v-if="img.text" class="badgeText">{{ `${img.text}` }}</p>
+        <div
+          v-for="(img, index) in list"
+          :key="`badge${index}`"
+          :data-index="index"
+          class="badgeHolder"
+          :style="{ '--i': index }"
+        >
+          <div :class="`badge${index}`" class="badgeWrapper">
+            <img :src="getBadge(img.src)" alt="lawyer badges" />
+            <p v-if="img.text" class="badgeText">{{ `${img.text}` }}</p>
+          </div>
         </div>
-      </div>
-    </transition-group>
-  </div>
+      </transition-group>
+    </div>
+  </section>
 </template>
 
 <script>
