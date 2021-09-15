@@ -111,7 +111,7 @@ export default {
   box-sizing: border-box;
   @media (max-width: $break) {
     width: 100%;
-    min-height: 50vh;
+    min-height: 40vh;
   }
 }
 section {
@@ -165,11 +165,7 @@ section {
       }
       .date {
         white-space: nowrap;
-        background: linear-gradient(to left, $accent_color, $accent_color3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-attachment: fixed;
-        color: $accent_color;
+        color: $accent_color2;
       }
       .gotos {
         margin-top: $l-gap;

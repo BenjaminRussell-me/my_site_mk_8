@@ -1,11 +1,15 @@
 <template>
   <div id="header_holder">
-    <header class="parent">
+    <header class="parent" :class="{ scrolled: scrollLocation > 100 }">
       <div class="outer_wrapper">
-        <img class="logo" :src="displayPic(content.logo.src)" />
+        <img
+          class="logo"
+          :class="{ logo_scroll: scrollLocation > 100 }"
+          :src="displayPic(content.logo.src)"
+        />
       </div>
     </header>
-    <div id="header_spacer"></div>
+    <div id="header_spacer" :class="{ scrolled: scrollLocation > 100 }"></div>
   </div>
 </template>
 
@@ -33,10 +37,17 @@ export default {
 
 <style lang="scss" scoped>
 @mixin header_height {
-  min-height: 6rem;
+  height: 6rem;
+  transition: 0.5s;
   @media (max-width: $break) {
-    min-height: 12rem;
+    height: 6rem;
   }
+}
+
+.scrolled {
+  height: 3rem !important;
+  background: rgba($main_color, 0.8);
+  backdrop-filter: blur(5px);
 }
 
 header {
@@ -60,6 +71,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
 
   @media (max-width: $break) {
     justify-content: space-around;
@@ -70,6 +82,10 @@ header {
 
 .logo {
   max-height: 5rem;
+  transition: 0.5s;
+}
+.logo_scroll {
+  max-height: 2rem;
 }
 .call_now_holder {
   display: flex;

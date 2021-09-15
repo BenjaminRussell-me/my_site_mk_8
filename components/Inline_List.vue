@@ -20,26 +20,19 @@ export default {
 <style lang="scss" scoped>
 ul {
   width: 100%;
+  padding: 0;
   display: flex;
-  column-gap: 5rem;
+  column-gap: 2rem;
   flex-wrap: wrap;
+  list-style-type: none;
   li {
     font-size: clamp(1.1rem, 10 * 1vw / 2.6, 1.85rem);
-    &::marker {
-      color: $accent_color;
-      content: '✔ ';
-    }
   }
   @media (max-width: 1080px) {
-    grid-gap: 0;
+    column-gap: 1rem;
     width: 80%;
     margin: 0;
     padding-left: 6%;
-    li {
-      &:first-child {
-        margin-top: 0;
-      }
-    }
   }
 }
 </style>

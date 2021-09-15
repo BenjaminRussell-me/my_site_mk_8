@@ -23,18 +23,19 @@ I'm ready to grow and learn so I am currently looking for a new job and would lo
   },
 
   badges: [
-    { src: 'Asset 1.svg' },
+    { src: 'Asset 1.svg', text: 'github', link: '' },
     {
       src: 'Asset 2.svg',
-      text: '200+ Reviews',
+      text: 'npm',
+      link: '',
     },
-    { src: 'Asset 3.svg' },
+    { src: 'Asset 3.svg', text: 'work github', link: '' },
     {
       src: 'Asset 4.svg',
-      text: '230+ Reviews',
+      text: 'code pen',
+      link: '',
     },
-    { src: 'Asset 5.svg' },
-    { src: 'Asset 6.svg' },
+    { src: 'Asset 5.svg', text: 'linked in', link: '' },
   ],
 
   scroller: {
@@ -74,25 +75,27 @@ I'm ready to grow and learn so I am currently looking for a new job and would lo
   },
 
   cta1: {
-    buttonText: `Get Started!`,
-    text: `Call Now!`,
+    buttonText: `contact me? :D`,
     img: { src: 'logoWhite.svg', alt: '' },
-  },
-  cta2: {
-    buttonText: `Message Us!`,
-    text: `Call Now!`,
-    img: { src: `logoWhite.svg`, alt: `` },
   },
 
   fresh: {
-    headline: `Get A Fresh Start?`,
-    subhead: `Most clients are able to...`,
+    headline: `interests`,
     list: [
-      `Stop collection harassment.`,
-      `Stop home foreclosure.`,
-      `Lower their monthly payments.`,
-      `Stop wage garnishment.`,
-      `Prevent auto repossession.`,
+      `programming`,
+      `design`,
+      `typescript`,
+      `biking`,
+      `illustration`,
+      `rust`,
+      `web assembly`,
+      `green tea`,
+      `animation`,
+      `swing dancing`,
+      `CSS Houdini`,
+      `VIM`,
+      `rollerblading`,
+      `RGB lights`,
     ],
   },
 

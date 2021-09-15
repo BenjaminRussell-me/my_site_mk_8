@@ -4,11 +4,7 @@
       <transition name="appear">
         <div v-if="show" class="contactBlock animated">
           <img :src="displayPic(content.img.src)" :alt="content.img.alt" />
-          <h3 class="t3 contactCallNow">
-            {{ content.text }}
-            <span><NumberComponent /></span>
-          </h3>
-          <DynamicButton>{{ content.buttonText }}</DynamicButton>
+          <DynamicButton class="tp">{{ content.buttonText }}</DynamicButton>
         </div>
       </transition>
     </div>
@@ -17,11 +13,9 @@
 
 <script>
 import DynamicButton from './holders/Dynamic_Button.vue'
-import NumberComponent from './Number_Component.vue'
 export default {
   components: {
     DynamicButton,
-    NumberComponent,
   },
   props: {
     content: {
