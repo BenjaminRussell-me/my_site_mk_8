@@ -10,5 +10,10 @@
 footer {
   background: $main_color;
   color: white;
+  height: 70vh;
+  .outer_wrapper {
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
 }
 </style>

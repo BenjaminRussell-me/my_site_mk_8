@@ -13,18 +13,20 @@
       </TT_OT>
     </Floater>
     <Badges v-if="content.badges" :scroll-location="scroll_location" />
-    <FullRow> </FullRow>
+    <FullRow> <Projects /> </FullRow>
     <Cta :scroll-location="scroll_location" :content="content.cta1"> </Cta>
+    <Thoughts />
     <Floater :scroll-location="scroll_location"> <Fresh /> </Floater>
     <section id="help">
       <h1 v-if="content.help.headline" class="t3">
         {{ noWidow(content.help.headline) }}
       </h1>
-      <div v-if="content.help.subhead" class="accent_text t2">
+      <h2 v-if="content.help.subhead" class="accent_text t2">
         {{ noWidow(content.help.subhead) }}
-      </div>
+      </h2>
     </section>
     <FooterComponent>
+      <Contact />
       <Copyright />
     </FooterComponent>
   </div>
@@ -41,6 +43,9 @@ import TT_OT from '../components/holders/TT_OT.vue'
 import Fresh from '../components/Fresh.vue'
 import FooterComponent from '../components/holders/Footer_component.vue'
 import Copyright from '../components/Copyright.vue'
+import Projects from '../components/Projects.vue'
+import Thoughts from '../components/Thoughts.vue'
+import Contact from '../components/Contact.vue'
 
 export default {
   components: {
@@ -54,6 +59,9 @@ export default {
     Fresh,
     FooterComponent,
     Copyright,
+    Projects,
+    Thoughts,
+    Contact,
   },
   data() {
     return {

@@ -100,8 +100,11 @@ I'm ready to grow and learn so I am currently looking for a new job and would lo
   },
 
   help: {
-    headline: `The Call Is FREE! The Evaluation Is FREE!`,
-    subhead: `We Can Help!`,
+    headline: `Thanks for stopping by!`,
+    subhead: `Contact info is down there 👇`,
   },
   copywrite: `copywrite`,
+
+  projects: { title: 'projects', items: [{}, {}, {}] },
+  thoughts: { title: 'thoughts', items: [{}, {}, {}, {}, {}] },
 })
