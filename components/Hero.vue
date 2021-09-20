@@ -25,7 +25,11 @@
             <div class="gototext">
               <span class="tp">learn more about me?</span>
               <br />
-              <DynamicButton class="tp">Click here for about me</DynamicButton>
+              <DynamicButton
+                class="tp"
+                @buttonPress="scrollTo('about'), $emit('about')"
+                >Click here for about me</DynamicButton
+              >
             </div>
 
             <div class="gototext">
@@ -34,7 +38,9 @@
                 😉</span
               >
               <br />
-              <DynamicButton class="tp"
+              <DynamicButton
+                class="tp"
+                @buttonPress="scrollTo('contact'), $emit('contact')"
                 >Click here to contact me
               </DynamicButton>
             </div>
@@ -82,6 +88,10 @@ export default {
   },
 
   methods: {
+    scrollTo(location) {
+      const loc = document.querySelector(`#${location}`)
+      loc.scrollIntoView(true, { behavior: 'smooth' })
+    },
     set_date() {
       const startDate = 1530628200000
       const year = { secs: 31536000, name: 'year' }

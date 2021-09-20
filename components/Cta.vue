@@ -2,7 +2,7 @@
   <section ref="cta" class="parent">
     <div class="outer_wrapper">
       <transition name="appear">
-        <div v-if="show" class="contactBlock animated">
+        <div v-if="show || override" class="contactBlock animated">
           <img :src="displayPic(content.img.src)" :alt="content.img.alt" />
           <DynamicButton class="tp">{{ content.buttonText }}</DynamicButton>
         </div>
@@ -25,6 +25,10 @@ export default {
     scrollLocation: {
       type: Number,
       default: 10000,
+    },
+    override: {
+      type: Boolean,
+      default: false,
     },
   },
   data() {

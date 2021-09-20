@@ -1,7 +1,7 @@
 <template>
   <section ref="floater_parent" class="parent">
     <transition name="appear">
-      <div v-if="show" class="outer_wrapper animated">
+      <div v-if="show || override" class="outer_wrapper animated">
         <slot>
           <h1>test</h1>
         </slot>
@@ -16,6 +16,10 @@ export default {
     scrollLocation: {
       type: Number,
       default: 10000,
+    },
+    override: {
+      type: Boolean,
+      default: false,
     },
   },
   data() {

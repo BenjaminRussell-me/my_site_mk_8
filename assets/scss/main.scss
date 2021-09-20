@@ -3,6 +3,7 @@
 @import 'typeography.scss';
 
 html {
+  scroll-behavior: smooth;
   background: rgb(235, 235, 235);
   background: linear-gradient(
     214deg,

@@ -23,19 +23,23 @@ I'm ready to grow and learn so I am currently looking for a new job and would lo
   },
 
   badges: [
-    { src: 'Asset 1.svg', text: 'github', link: '' },
+    { src: 'git.svg', text: 'github', link: 'https://github.com/br-haa' },
     {
-      src: 'Asset 2.svg',
+      src: 'npm.svg',
       text: 'npm',
-      link: '',
+      link: 'https://www.npmjs.com/~benjaminrussell.me',
     },
-    { src: 'Asset 3.svg', text: 'work github', link: '' },
+    { src: 'git.svg', text: 'work github', link: 'https://github.com/br-haa' },
     {
-      src: 'Asset 4.svg',
+      src: 'pen.svg',
       text: 'code pen',
-      link: '',
+      link: 'https://codepen.io/benjamin-me',
     },
-    { src: 'Asset 5.svg', text: 'linked in', link: '' },
+    {
+      src: 'linked.svg',
+      text: 'linked in',
+      link: 'www.linkedin.com/in/benjamin-russell-developer',
+    },
   ],
 
   scroller: {

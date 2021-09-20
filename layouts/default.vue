@@ -2,8 +2,16 @@
   <div id="main_wrapper">
     <nuxt />
     <Header :scroll-location="scroll_location" />
-    <Hero />
-    <Floater :scroll-location="scroll_location"
+    <Hero
+      @about=";(ae.about = true), (ae.badges = true)"
+      @contact="
+        ;(ae.about = true),
+          (ae.badges = true),
+          (ae.cta = true),
+          (ae.inter = true)
+      "
+    />
+    <Floater id="about" :override="ae.about" :scroll-location="scroll_location"
       ><TT_OT>
         <div>
           <h1 class="t3">{{ noWidow(content.largestBlock.headline) }}</h1>
@@ -12,11 +20,22 @@
         <img id="profile_pic" :src="displayPic(content.largestBlock.img.src)" />
       </TT_OT>
     </Floater>
-    <Badges v-if="content.badges" :scroll-location="scroll_location" />
+    <Badges
+      v-if="content.badges"
+      :override="ae.badges"
+      :scroll-location="scroll_location"
+    />
     <FullRow> <Projects /> </FullRow>
-    <Cta :scroll-location="scroll_location" :content="content.cta1"> </Cta>
+    <Cta
+      :override="ae.cta"
+      :scroll-location="scroll_location"
+      :content="content.cta1"
+    >
+    </Cta>
     <Thoughts />
-    <Floater :scroll-location="scroll_location"> <Fresh /> </Floater>
+    <Floater :override="ae.inter" :scroll-location="scroll_location">
+      <Fresh />
+    </Floater>
     <section id="help">
       <h1 v-if="content.help.headline" class="t3">
         {{ noWidow(content.help.headline) }}
@@ -67,6 +86,12 @@ export default {
     return {
       test: 1,
       scroll_location: 0,
+      ae: {
+        about: false,
+        badges: false,
+        cta: false,
+        inter: false,
+      },
     }
   },
   computed: {
@@ -116,6 +141,9 @@ export default {
   }
   #help {
     text-align: center;
+  }
+  #about {
+    scroll-margin: 8rem;
   }
   #profile_pic {
     justify-self: center;
