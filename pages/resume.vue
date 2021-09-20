@@ -6,7 +6,7 @@
         <div id="resumeTop" class="dark">
           <div id="resumeName">
             <h2>Benjamin Russell</h2>
-            <h5>Web developer and designer</h5>
+            <h5>Web developer</h5>
             <div class="line bg1"></div>
           </div>
           <div id="resumeLogoHolder">
@@ -55,8 +55,18 @@
             <div>
               <h3>Contact</h3>
               <div id="contactInfo">
-                <h5>E-mail: BenjaminRussell@contact.me</h5>
-                <h5>Website: BenjaminRussell.me</h5>
+                <span class="tp"
+                  >E-mail:
+                  <a class="tp" href="mailto: contact@benjaminrussell.me"
+                    >Contact@BenjaminRussell.me</a
+                  ></span
+                >
+                <span class="tp"
+                  >Website:
+                  <a class="tp" href="https://benjaminrussell.me"
+                    >BenjaminRussell.me</a
+                  ></span
+                >
               </div>
             </div>
           </div>
@@ -73,15 +83,15 @@
               <ul>
                 <li>Javascript</li>
                 <li>SCSS</li>
-                <li>Html</li>
+                <li>Semantic HTML</li>
                 <li>Vue.js</li>
                 <li>SVG</li>
                 <li>CSS</li>
                 <li>GraphQL</li>
                 <li>Adobe Illustrator</li>
-                <li>Animation</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Premere</li>
+                <li>CSS Animation</li>
+                <li>Typescript</li>
+                <li>Reusable Components</li>
               </ul>
             </div>
           </div>
@@ -101,7 +111,6 @@
                   building stack to Vue.js
                 </li>
                 <li>Create html banner ads</li>
-                <li>All needed photoshop work</li>
                 <li>Asset and logo creation for clients that need it</li>
               </ul>
             </div>
@@ -114,15 +123,18 @@
           <div id="resumeAbout">
             <h3>About</h3>
             <p>
-              I have been working as a developer / designer for the last
-              {{ new Date().getFullYear() - 2018 }} years. I strive to combine
-              my skills and interests in Javascript, Css, design, SVG, layout,
-              WebAssembly, animation UI and more. To create functional and
-              visually interesting products.
+              My name is Benjamin Russell. I am a 25 year old Minneapolis based
+              developer with three years of professional experience
+            </p>
+
+            <p>
+              My specialties are creating reusable components for teams, making
+              cool user interactions with SCSS and Typescript, Vue.js, and
+              whatever interesting thing I'm trying to learn currently.
             </p>
             <p>
-              Wanna work on something together? Let me know! I'm always down for
-              a new interesting challenge.
+              I'm ready to grow and learn so I am currently looking for a new
+              job and would love to talk.
             </p>
           </div>
         </div>
@@ -147,7 +159,16 @@
 
 <script>
 export default {
-  name: 'Resume',
+  layout: 'blank',
+  computed: {
+    ymd() {
+      const date = new Date()
+      const y = date.getUTCFullYear()
+      const m = date.getUTCDate()
+      const d = date.getUTCMonth() + 1
+      return `${y}_${m}_${d}`
+    },
+  },
   methods: {
     print() {
       let stylesHtml = ''
@@ -168,6 +189,7 @@ export default {
           <html lang="en">
             <head>
               ${stylesHtml}
+							<title>benjamin_russell_resume_${this.ymd}</title>
             </head>
             <body>
                ${printHtml}
@@ -455,6 +477,10 @@ input {
   margin: $textMargin 0 $textMargin 0;
   font-size: 1.1rem;
   font-weight: 500;
+}
+a {
+  text-decoration: none;
+  color: $accent_color;
 }
 #printButton {
   padding: 0.5rem 5rem 0.5rem 5rem;

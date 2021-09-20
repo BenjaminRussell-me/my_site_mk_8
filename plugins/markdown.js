@@ -10,12 +10,25 @@ if (!Vue.__md_mixin__) {
         if (text) {
           const mk = marked(text)
           const mki = insane(mk, {
+            allowedTags: [
+              'h1',
+              'h2',
+              'h3',
+              'h4',
+              'h5',
+              'h6',
+              'p',
+              'span',
+              'NuxtLink',
+              'a',
+            ],
             allowedAttributes: {
               h1: ['class'],
               h2: ['class'],
               h3: ['class'],
               h4: ['class'],
               h5: ['class'],
+              a: 'href',
             },
           })
           return mki

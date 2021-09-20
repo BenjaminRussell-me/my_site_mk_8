@@ -18,12 +18,18 @@ My specialties are creating reusable components for teams, making cool user inte
 
 I've worked the last three years at a small, fast paced marketing company where I have (with a team and also single handedly) made many apps, websites and landing pages.
 
-I'm ready to grow and learn so I am currently looking for a new job and would love to talk.`,
+I'm ready to grow and learn so I am currently looking for a new job and would love to talk.
+
+`,
     img: { src: 'me.jpg', alt: '' },
   },
 
   badges: [
-    { src: 'git.svg', text: 'github', link: 'https://github.com/br-haa' },
+    {
+      src: 'git.svg',
+      text: 'github',
+      link: 'https://github.com/BenjaminRussell-me',
+    },
     {
       src: 'npm.svg',
       text: 'npm',
@@ -38,7 +44,7 @@ I'm ready to grow and learn so I am currently looking for a new job and would lo
     {
       src: 'linked.svg',
       text: 'linked in',
-      link: 'www.linkedin.com/in/benjamin-russell-developer',
+      link: 'https://linkedin.com/in/benjamin-russell-developer',
     },
   ],
 
@@ -107,7 +113,7 @@ I'm ready to grow and learn so I am currently looking for a new job and would lo
     headline: `Thanks for stopping by!`,
     subhead: `Contact info is down there 👇`,
   },
-  copywrite: `copywrite`,
+  copywrite: `Benjamin Russell`,
 
   projects: { title: 'projects', items: [{}, {}, {}] },
   thoughts: { title: 'thoughts', items: [{}, {}, {}, {}, {}] },

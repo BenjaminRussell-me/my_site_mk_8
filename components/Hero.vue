@@ -27,7 +27,7 @@
               <br />
               <DynamicButton
                 class="tp"
-                @buttonPress="scrollTo('about'), $emit('about')"
+                @buttonPress=" $emit('about')"
                 >Click here for about me</DynamicButton
               >
             </div>
@@ -40,7 +40,7 @@
               <br />
               <DynamicButton
                 class="tp"
-                @buttonPress="scrollTo('contact'), $emit('contact')"
+                @buttonPress="$emit('contact')"
                 >Click here to contact me
               </DynamicButton>
             </div>

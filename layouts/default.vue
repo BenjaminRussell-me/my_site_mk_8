@@ -2,20 +2,13 @@
   <div id="main_wrapper">
     <nuxt />
     <Header :scroll-location="scroll_location" />
-    <Hero
-      @about=";(ae.about = true), (ae.badges = true)"
-      @contact="
-        ;(ae.about = true),
-          (ae.badges = true),
-          (ae.cta = true),
-          (ae.inter = true)
-      "
-    />
+    <Hero @about="aeOverride(1)" @contact="aeOverride(2)" />
     <Floater id="about" :override="ae.about" :scroll-location="scroll_location"
       ><TT_OT>
         <div>
           <h1 class="t3">{{ noWidow(content.largestBlock.headline) }}</h1>
           <div class="tp" v-html="markdown(content.largestBlock.subhead)"></div>
+          <NuxtLink class="t6" to="/resume">My Resume</NuxtLink>
         </div>
         <img id="profile_pic" :src="displayPic(content.largestBlock.img.src)" />
       </TT_OT>
@@ -116,6 +109,23 @@ export default {
       // todo add timeout logic
       return (...args) => {
         func.apply(this.args)
+      }
+    },
+    aeOverride(num) {
+      if (num === 1) {
+        this.ae.about = true
+        this.ae.badges = true
+        setTimeout(() => {
+          this.scrollTo('about')
+        }, 500)
+      } else {
+        this.ae.about = true
+        this.ae.badges = true
+        this.ae.cta = true
+        this.ae.inter = true
+        setTimeout(() => {
+          this.scrollTo('contact')
+        }, 500)
       }
     },
     setData() {
