@@ -83,7 +83,7 @@ export default {
   gap: 1rem;
   .badgeHolder {
     width: clamp(140px, 13vw, 180px);
-    height: clamp(170px, 14vw, 210px);
+    height: clamp(180px, 17vw, 210px);
     display: grid;
     background: $gradient;
     background-attachment: fixed;

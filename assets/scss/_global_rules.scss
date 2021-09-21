@@ -10,6 +10,15 @@ body {
 .accent_text {
   color: $accent_color;
 }
+.accent_text1 {
+  color: $accent_color1;
+}
+.accent_text2 {
+  color: darken($accent_color2, 10%);
+}
+.accent_text3 {
+  color: $accent_color3;
+}
 .parent {
   display: grid;
 }

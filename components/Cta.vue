@@ -4,7 +4,9 @@
       <transition name="appear">
         <div v-if="show || override" class="contactBlock animated">
           <img :src="displayPic(content.img.src)" :alt="content.img.alt" />
-          <DynamicButton class="tp">{{ content.buttonText }}</DynamicButton>
+          <DynamicButton class="tp" @buttonPress="$emit('press')">{{
+            content.buttonText
+          }}</DynamicButton>
         </div>
       </transition>
     </div>

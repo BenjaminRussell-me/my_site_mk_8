@@ -3,9 +3,16 @@
     <div class="outer_wrapper">
       <div class="text">
         <h1 class="t1">Contact me!</h1>
-        <a class="tp">click here for resume</a>
+        <NuxtLink to="/resume" class="t5 resume"
+          >click here for resume</NuxtLink
+        >
         <br />
-        <span class="tp">e-mail: <a>Contact@BenjaminRussell.me</a></span>
+        <span class="t5"
+          >e-mail:
+          <a class="email" href="mailto: contact@benjaminrussell.me"
+            >Contact@BenjaminRussell.me</a
+          ></span
+        >
       </div>
     </div>
   </section>
@@ -18,5 +25,11 @@
 .text {
   justify-self: center;
   text-align: center;
+}
+.resume {
+  color: $accent_color;
+}
+.email {
+  color: $accent_color;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="projects">
-    <h1 class="t1">{{ content.projects.title }}</h1>
+    <h1 class="t1 accent_text1">{{ content.projects.title }}</h1>
     <div class="flex">
       <ProjectBlock
         v-for="(project, index) in content.projects.items"

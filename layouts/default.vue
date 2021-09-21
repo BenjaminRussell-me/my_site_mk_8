@@ -6,9 +6,11 @@
     <Floater id="about" :override="ae.about" :scroll-location="scroll_location"
       ><TT_OT>
         <div>
-          <h1 class="t3">{{ noWidow(content.largestBlock.headline) }}</h1>
+          <h1 class="t1 accent_text">
+            {{ noWidow(content.largestBlock.headline) }}
+          </h1>
           <div class="tp" v-html="markdown(content.largestBlock.subhead)"></div>
-          <NuxtLink class="t6" to="/resume">My Resume</NuxtLink>
+          <NuxtLink class="t6 resume_link" to="/resume">My Resume</NuxtLink>
         </div>
         <img id="profile_pic" :src="displayPic(content.largestBlock.img.src)" />
       </TT_OT>
@@ -23,7 +25,9 @@
       :override="ae.cta"
       :scroll-location="scroll_location"
       :content="content.cta1"
+      @press="aeOverride(2)"
     >
+      >
     </Cta>
     <Thoughts />
     <Floater :override="ae.inter" :scroll-location="scroll_location">
@@ -159,6 +163,9 @@ export default {
     justify-self: center;
     max-width: 100%;
     max-height: 100%;
+  }
+  .resume_link {
+    color: $accent_color;
   }
 }
 </style>
