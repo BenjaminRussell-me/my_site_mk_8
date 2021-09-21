@@ -115,6 +115,54 @@ I'm ready to grow and learn so I am currently looking for a new job and would lo
   },
   copywrite: `Benjamin Russell`,
 
-  projects: { title: 'projects', items: [{}, {}, {}] },
-  thoughts: { title: 'thoughts', items: [{}, {}, {}, {}, {}] },
+  projects: {
+    title: 'projects',
+    items: [
+      {
+        title: `Pinned Map App`,
+        link: `/projects/map_app`,
+        tags: [`app`, `vue`],
+      },
+      {
+        title: `Custom Form Component`,
+        link: `/projects/form_component`,
+        tags: [`component`, `npm`, `vue`],
+      },
+      {
+        title: `Landing Page Template`,
+        link: `/projects/lp_template`,
+        tags: [`Nuxt`, `vue`],
+      },
+    ],
+  },
+  thoughts: {
+    title: 'thoughts',
+    items: [
+      {
+        title: ``,
+        link: ``,
+        tags: [``],
+      },
+      {
+        title: ``,
+        link: ``,
+        tags: [``],
+      },
+      {
+        title: ``,
+        link: ``,
+        tags: [``],
+      },
+      {
+        title: ``,
+        link: ``,
+        tags: [``],
+      },
+      {
+        title: ``,
+        link: ``,
+        tags: [``],
+      },
+    ],
+  },
 })

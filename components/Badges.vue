@@ -53,6 +53,9 @@ export default {
     scrollLocation() {
       this.eltop()
     },
+    override() {
+      this.eltop()
+    },
   },
   methods: {
     getBadge(img) {

@@ -5,6 +5,7 @@
       <ProjectBlock
         v-for="(project, index) in content.projects.items"
         :key="`project${index}`"
+        :content="project"
       >
       </ProjectBlock>
     </div>
@@ -29,8 +30,8 @@ export default {
 .flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: $gap;
-  margin: 0 0 3rem 0;
+  justify-content: space-around;
+  gap: $l-gap;
+  margin: 1rem 0 3rem 0;
 }
 </style>
