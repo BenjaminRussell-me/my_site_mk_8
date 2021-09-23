@@ -25,9 +25,7 @@
             <div class="gototext">
               <span class="tp">learn more about me?</span>
               <br />
-              <DynamicButton
-                class="tp"
-                @buttonPress=" $emit('about')"
+              <DynamicButton class="tp" @buttonPress="$emit('about')"
                 >Click here for about me</DynamicButton
               >
             </div>
@@ -35,12 +33,10 @@
             <div class="gototext">
               <span class="tp"
                 >or maybe we skip all that <br />and go straight to e-mailing
-                😉</span
+                📧</span
               >
               <br />
-              <DynamicButton
-                class="tp"
-                @buttonPress="$emit('contact')"
+              <DynamicButton class="tp" @buttonPress="$emit('contact')"
                 >Click here to contact me
               </DynamicButton>
             </div>

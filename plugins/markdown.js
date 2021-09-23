@@ -21,6 +21,9 @@ if (!Vue.__md_mixin__) {
               'span',
               'NuxtLink',
               'a',
+              'ul',
+              'li',
+              'img',
             ],
             allowedAttributes: {
               h1: ['class'],
@@ -29,6 +32,7 @@ if (!Vue.__md_mixin__) {
               h4: ['class'],
               h5: ['class'],
               a: 'href',
+              img: ['src', 'alt'],
             },
           })
           return mki
