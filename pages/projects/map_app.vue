@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1></h1>
+    <h1>Pinned Map App</h1>
     <img :src="displayPic('projects/map_app.png')" />
     <div v-html="markdown(content)"></div>
   </div>
@@ -11,7 +11,6 @@ export default {
   data() {
     return {
       content: `
-# Pinned Map App
 
 ##### Links
 - [app (its a free heroku host so it will take a bit to load)](https://map-creator-app.herokuapp.com/)

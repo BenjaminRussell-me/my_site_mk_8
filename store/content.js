@@ -1,11 +1,11 @@
 export const state = () => ({
   header: {
-    logo: { src: 'logoWhite.svg', alt: '' },
+    logo: { src: 'mylogo.svg', alt: '' },
   },
   // headlines to be found in headline store file
   hero: {
-    portrait: { src: 'backgrounds/background.svg', alt: '' },
-    left: `welcome`,
+    portrait: { src: 'hero.png', alt: '' },
+    left: `hey! how's it going?`,
   },
   largestBlock: {
     headline: `about me`,
@@ -90,7 +90,7 @@ I'm ready to grow and learn so I am currently looking for a new job and would lo
 
   cta1: {
     buttonText: `contact me? :D`,
-    img: { src: 'logoWhite.svg', alt: '' },
+    img: { src: 'mylogodark.svg', alt: '' },
   },
 
   fresh: {

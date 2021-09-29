@@ -125,7 +125,7 @@ section {
   background: green;
   width: 100%;
   .wrapper {
-    background: red;
+    background: $gradient;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
