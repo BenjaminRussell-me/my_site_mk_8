@@ -13,6 +13,10 @@
   grid-template-columns: 2fr 1fr;
   min-height: 200px;
   width: 100%;
+  img {
+    place-self: center;
+    border-radius: $border_radius;
+  }
   @media (max-width: $break) {
     grid-template-columns: 1fr;
   }

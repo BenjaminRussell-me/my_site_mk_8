@@ -1,5 +1,9 @@
 <template>
-  <div v-html="markdown(content)"></div>
+  <div>
+    <h1></h1>
+    <img :src="displayPic('projects/map_app.png')" />
+    <div v-html="markdown(content)"></div>
+  </div>
 </template>
 <script>
 export default {

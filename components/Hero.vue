@@ -23,7 +23,7 @@
           </p>
           <div class="gotos">
             <div class="gototext">
-              <span class="tp">learn more about me?</span>
+              <span class="tp">learn more about me? 👋</span>
               <br />
               <DynamicButton class="tp" @buttonPress="$emit('about')"
                 >Click here for about me</DynamicButton
@@ -121,7 +121,7 @@ export default {
   }
 }
 section {
-  margin-top: -$l_gap;
+  margin-top: -$l_gap * 2;
   background: green;
   width: 100%;
   .wrapper {

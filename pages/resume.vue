@@ -1,6 +1,13 @@
 <template>
   <div id="resumeHolder">
-    <button id="printButton" class="bg" @click="print">Click to print</button>
+    <div class="buttons">
+      <DynamicButton class="back" @buttonPress="$router.back()"
+        >👈 back</DynamicButton
+      >
+      <DynamicButton class="print" @buttonPress="print"
+        >Click to print</DynamicButton
+      >
+    </div>
     <div id="resumePrint">
       <div id="resume">
         <div id="resumeTop" class="dark">
@@ -63,8 +70,8 @@
                 >
                 <span class="tp"
                   >Website:
-                  <a class="tp" href="https://benjaminrussell.me"
-                    >BenjaminRussell.me</a
+                  <a class="tp" href="https://portfolio.benjaminrussell.me"
+                    >portfolio.BenjaminRussell.me</a
                   ></span
                 >
               </div>
@@ -82,16 +89,19 @@
               <h3>Skills</h3>
               <ul>
                 <li>Javascript</li>
+                <li>Typescript</li>
                 <li>SCSS</li>
                 <li>Semantic HTML</li>
                 <li>Vue.js</li>
-                <li>SVG</li>
-                <li>CSS</li>
                 <li>GraphQL</li>
                 <li>Adobe Illustrator</li>
-                <li>CSS Animation</li>
-                <li>Typescript</li>
-                <li>Reusable Components</li>
+              </ul>
+              <h3>Education</h3>
+              <p>DCTC - graduated 2018</p>
+              <ul>
+                <li>Web & Multimedia - AAS</li>
+                <li>Graphic Design - AAS</li>
+                <li>First place trophy for website portfolio</li>
               </ul>
             </div>
           </div>
@@ -158,15 +168,19 @@
 </template>
 
 <script>
+import DynamicButton from '../components/holders/Dynamic_Button.vue'
 export default {
+  components: {
+    DynamicButton,
+  },
   layout: 'blank',
   computed: {
     ymd() {
       const date = new Date()
       const y = date.getUTCFullYear()
-      const m = date.getUTCDate()
-      const d = date.getUTCMonth() + 1
-      return `${y}_${m}_${d}`
+      const d = date.getUTCDate()
+      const m = date.getUTCMonth() + 1
+      return `${d}_${m}_${y}`
     },
   },
   methods: {
@@ -252,6 +266,21 @@ ul {
 #resumeHolder {
   display: grid;
   justify-items: center;
+  margin: $l_gap 0 $l_gap 0;
+  .buttons {
+    display: grid;
+    width: 8.5in;
+    margin: 0 0 $gap;
+    .back {
+      grid-area: 1/1/1/1;
+      max-width: 200px;
+    }
+    .print {
+      grid-area: 1/1/1/1;
+      max-width: 300px;
+      justify-self: center;
+    }
+  }
 }
 #resumePrint {
   box-shadow: 0 0 5px 3px black;
@@ -319,7 +348,7 @@ ul {
 #resumeSkills {
   grid-row: span 3;
   color: white;
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
   #resumeSkillsContent {
     padding: 1rem;
   }

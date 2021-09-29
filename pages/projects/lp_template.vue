@@ -1,5 +1,9 @@
 <template>
-  <div v-html="markdown(content)"></div>
+  <div>
+    <h1>Landing Page Template</h1>
+    <img :src="displayPic('projects/template.png')" />
+    <div v-html="markdown(content)"></div>
+  </div>
 </template>
 <script>
 export default {
@@ -7,9 +11,6 @@ export default {
   data() {
     return {
       content: `
-# Landing Page Template
-![example](displayPic('me.jpg'))
-
 ##### Links
 [github](https://github.com/br-haa/landing_page_template)
 

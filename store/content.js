@@ -35,7 +35,11 @@ I'm ready to grow and learn so I am currently looking for a new job and would lo
       text: 'npm',
       link: 'https://www.npmjs.com/~benjaminrussell.me',
     },
-    { src: 'git.svg', text: 'work github', link: 'https://github.com/br-haa' },
+    {
+      src: 'git.svg',
+      text: 'professional GH',
+      link: 'https://github.com/br-haa',
+    },
     {
       src: 'pen.svg',
       text: 'code pen',
@@ -113,7 +117,7 @@ I'm ready to grow and learn so I am currently looking for a new job and would lo
     headline: `Thanks for stopping by!`,
     subhead: `Contact info is down there 👇`,
   },
-  copywrite: `Benjamin Russell`,
+  copyright: `Benjamin Russell`,
 
   projects: {
     title: 'projects',

@@ -24,6 +24,9 @@ if (!Vue.__md_mixin__) {
               'ul',
               'li',
               'img',
+              'code',
+              'i',
+              'em',
             ],
             allowedAttributes: {
               h1: ['class'],

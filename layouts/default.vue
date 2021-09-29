@@ -147,7 +147,7 @@ export default {
 <style lang="scss" scoped>
 #main_wrapper {
   display: grid;
-  row-gap: $l_gap;
+  row-gap: $l_gap * 2;
   #post_hero_button_row {
     width: 100%;
     display: flex;

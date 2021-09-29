@@ -53,7 +53,7 @@ export default {
     '@nuxtjs/stylelint-module',
   ],
   gtm: {
-    id: '', // GTM id here!
+    id: 'GTM-5LB54NR', // GTM id here!
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
