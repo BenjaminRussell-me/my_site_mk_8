@@ -133,8 +133,8 @@
           <div id="resumeAbout">
             <h3>About</h3>
             <p>
-              My name is Benjamin Russell. I am a 25 year old Minneapolis based
-              developer with three years of professional experience
+              My name is Benjamin Russell. I am a 25-year-old Minneapolis-based
+              developer with three years of professional experience.
             </p>
 
             <p>
