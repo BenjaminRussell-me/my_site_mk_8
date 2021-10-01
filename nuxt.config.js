@@ -19,7 +19,6 @@ export default {
         name: 'description',
         content: 'Portfolio website for a developer named Benjamin Russell :D',
       },
-      { name: 'robots', content: 'noindex, nofollow' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favi.png' }],
     script: [
