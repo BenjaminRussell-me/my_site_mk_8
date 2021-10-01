@@ -3,11 +3,14 @@
     <div class="outer_wrapper">
       <div class="text">
         <h1 class="t1">Contact me!</h1>
-        <NuxtLink to="/resume" class="t5 resume"
-          >click here for resume</NuxtLink
-        >
-        <br />
-        <span class="t5"
+        <span class="info t5"
+          >resume:
+          <NuxtLink to="/resume" class="t5 resume"
+            >click here for resume</NuxtLink
+          >
+        </span>
+
+        <span class="info t5"
           >e-mail:
           <a class="email" href="mailto: contact@benjaminrussell.me"
             >Contact@BenjaminRussell.me</a
@@ -25,6 +28,10 @@
 .text {
   justify-self: center;
   text-align: center;
+  .info {
+    display: block;
+    margin: $gap;
+  }
 }
 .resume {
   color: $accent_color;

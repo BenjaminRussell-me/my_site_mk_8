@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>Rust and WASM</h1>
-    <img :src="displayPic()" />
     <div v-html="markdown(content)"></div>
   </div>
 </template>
@@ -11,6 +10,8 @@ export default {
   data() {
     return {
       content: `
+![](https://res.cloudinary.com/dzjvh0z3f/image/upload/v1633104797/blocks_q6aopd.gif)
+
 My interest in Rust started the same way it did for many web developers. "oh god, web assembly? low-level programming languages on the web?... okay, fine, when do I have to hang up the javascript?". Then after some research learning about [Rust](https://www.rust-lang.org/), [WASI](https://wasi.dev/), [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor), [Rocket](https://rocket.rs/) and finally finding out that web assembly in its current form won't ever replace JavaScript fully.
 
 *(web assembly has no DOM access for those who don't know).*

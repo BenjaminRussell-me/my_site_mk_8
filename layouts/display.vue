@@ -3,9 +3,13 @@
     <div class="parent">
       <div class="outer_wrapper">
         <nav>
-          <DynamicButton class="tp" @buttonPress="$router.back()"
+          <DynamicButton
+            id="back_button"
+            class="tp"
+            @buttonPress="$router.back()"
             >👈 back</DynamicButton
           >
+          <img class="logo" :src="displayPic('mylogodark.svg')" />
         </nav>
         <div class="holder">
           <div class="glow" />
@@ -28,9 +32,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#back_button {
+  margin: 0;
+}
 #main_wrapper {
   height: 100vh;
+  box-sizing: border-box;
   .parent {
+    padding-top: $gap;
     .outer_wrapper {
       display: grid;
       grid-template-rows: auto 1fr;
@@ -42,6 +51,11 @@ $w: clamp(300px, 100%, 550px);
 nav {
   width: $w;
   justify-self: center;
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    width: 40%;
+  }
 }
 .holder {
   display: grid;

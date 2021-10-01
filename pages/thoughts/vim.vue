@@ -11,6 +11,8 @@ export default {
   data() {
     return {
       content: `
+![](https://res.cloudinary.com/dzjvh0z3f/image/upload/v1633104824/crazy_l8kvy2.gif)
+
 First off I know things can get a bit sensitive around this topic. Back when trying to figure out if it was worth learning Vim in the first place the flame wars online you could find on the topic made political discussions look like puppies and rainbows. 
 
 I do not feel that strongly about it. (please have mercy I have two cats that need me)

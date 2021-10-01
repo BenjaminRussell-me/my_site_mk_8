@@ -115,12 +115,12 @@
                 <li>
                   Create and manage internal reusable javascript components
                 </li>
+                <li>Create and manage internal Apps</li>
                 <li>Design and create new landing page layouts</li>
                 <li>
                   Research and create examples for how to switch our website
                   building stack to Vue.js
                 </li>
-                <li>Create html banner ads</li>
                 <li>Asset and logo creation for clients that need it</li>
               </ul>
             </div>

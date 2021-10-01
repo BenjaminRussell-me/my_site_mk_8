@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>Houdini looks cool</h1>
-    <img :src="displayPic()" />
     <div v-html="markdown(content)"></div>
   </div>
 </template>
@@ -11,6 +10,8 @@ export default {
   data() {
     return {
       content: `
+![](https://res.cloudinary.com/dzjvh0z3f/image/upload/v1633104729/magic_vu2ftm.gif)
+
 I'll be honest. I have watched quite a few dev talks about CSS Houdini and I'm not sure I understand the full scope of it yet. 
 [this talk by Una Kravets](https://www.youtube.com/watch?v=yZ-HpepLIY8&t=1892s) was the one that got through my skull enough to make me excited for it though.
 

@@ -103,6 +103,8 @@ export default {
       place-self: center;
       display: grid;
       text-decoration: none;
+      width: 100%;
+      height: 100%;
     }
     img {
       object-fit: scale-down;

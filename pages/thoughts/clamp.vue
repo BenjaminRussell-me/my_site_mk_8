@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>Why I ❤️ clamp</h1>
-    <img :src="displayPic()" />
     <div v-html="markdown(content)"></div>
   </div>
 </template>
@@ -11,6 +10,8 @@ export default {
   data() {
     return {
       content: `
+![](https://res.cloudinary.com/dzjvh0z3f/image/upload/v1633104487/giphy_she6sx.gif)
+
 Out of all the new-ish widely usable CSS tricks clamp has got to be one of my favorites.
 
 #### What is clamp / how does it work?

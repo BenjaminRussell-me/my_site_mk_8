@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>Grid VS Flex</h1>
-    <img :src="displayPic()" />
     <div v-html="markdown(content)"></div>
   </div>
 </template>
@@ -11,6 +10,8 @@ export default {
   data() {
     return {
       content: `
+![](https://res.cloudinary.com/dzjvh0z3f/image/upload/v1633104681/vs_ghwcmj.gif)
+
 When creating a layout with CSS it's not always immediately obvious which display rule to use, grid or flex.
 I think it becomes a little more clear if you explicitly list out my perceived strengths and weaknesses of each rule.
 
