@@ -2,7 +2,6 @@ export const state = () => ({
   header: {
     logo: { src: 'mylogo.svg', alt: 'benjaminrussell.me' },
   },
-  // headlines to be found in headline store file
   hero: {
     portrait: { src: 'hero.png', alt: 'background' },
     left: `hey! how's it going?`,
@@ -51,20 +50,6 @@ I'm ready to grow and learn so I am currently looking for a new job and would lo
     },
   ],
 
-  scroller: {
-    title: `Why Hoglund Law?`,
-    list: [
-      `Free Confidential Consultations`,
-      `Free Credit Repair Program`,
-      `Free E-Book On Bankruptcy`,
-      `Affordable Payment Plans`,
-      `Over 47,000 Clients Trusted Us`,
-      `70+ Years Of Combined Experience`,
-      `Chapter 7, 13 & Business Bankruptcy`,
-      `Call Days, Evenings, Or Weekends`,
-    ],
-  },
-
   cta1: {
     buttonText: `contact me? :D`,
     img: { src: 'mylogodark.svg', alt: 'benjaminrussell.me' },
@@ -84,15 +69,15 @@ I'm ready to grow and learn so I am currently looking for a new job and would lo
       `animation 🎬`,
       `swing dancing 💃`,
       `CSS Houdini 🎩`,
-      `VIM ⚠`,
+      `Vim ⚠`,
       `rollerblading ⛸`,
       `RGB lights 🚦`,
     ],
   },
 
   help: {
-    headline: `Thanks for stopping by!`,
-    subhead: `Contact info is down there 👇`,
+    headline: `thanks for stopping by!`,
+    subhead: `contact info is down there 👇`,
   },
   copyright: `Benjamin Russell`,
 
