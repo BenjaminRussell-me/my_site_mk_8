@@ -1,10 +1,10 @@
 export const state = () => ({
   header: {
-    logo: { src: 'mylogo.svg', alt: '' },
+    logo: { src: 'mylogo.svg', alt: 'benjaminrussell.me' },
   },
   // headlines to be found in headline store file
   hero: {
-    portrait: { src: 'hero.png', alt: '' },
+    portrait: { src: 'hero.png', alt: 'background' },
     left: `hey! how's it going?`,
   },
   largestBlock: {
@@ -20,7 +20,7 @@ I've worked the last three years at a small, fast-paced marketing company where 
 
 I'm ready to grow and learn so I am currently looking for a new job and would love to talk.
 `,
-    img: { src: 'me.jpg', alt: '' },
+    img: { src: 'me.jpg', alt: 'picture of me' },
   },
 
   badges: [
@@ -65,31 +65,9 @@ I'm ready to grow and learn so I am currently looking for a new job and would lo
     ],
   },
 
-  experienced: {
-    headline: `One Of Minnesota's Most Experienced Bankruptcy Law Firms`,
-    subhead: `70+ Years Of Combined Bankruptcy Experience`,
-    picture: { src: 'minnesota.svg', alt: '' },
-    widgets: [
-      {
-        reviewType: `Google Reviews`,
-        reviewAmount: `230+`,
-        buttonText: `Read More`,
-        img: { src: `Asset 1.svg`, alt: `` },
-        stars: `4.5`,
-      },
-      {
-        reviewType: `BBB Reviews`,
-        reviewAmount: `200+`,
-        buttonText: `Read More`,
-        img: { src: `Asset 1.svg`, alt: `` },
-        text: `We are proud to be A+ BBB accredited`,
-      },
-    ],
-  },
-
   cta1: {
     buttonText: `contact me? :D`,
-    img: { src: 'mylogodark.svg', alt: '' },
+    img: { src: 'mylogodark.svg', alt: 'benjaminrussell.me' },
   },
 
   fresh: {
