@@ -13,7 +13,7 @@
         <div class="text_holder">
           <h1 class="t1">my name is Benjamin</h1>
           <p class="t4 dates">
-            I have been a proffesional developer for
+            I have been a professional developer for
             <span class="date"> {{ date_time.year }} years,</span>
             <span class="date"> {{ date_time.month }} months,</span>
             <span class="date"> {{ date_time.day }} days,</span>
@@ -26,7 +26,7 @@
               <span class="tp">learn more about me? 👋</span>
               <br />
               <DynamicButton class="tp" @buttonPress="$emit('about')"
-                >Click here for about me</DynamicButton
+                >click here for about me</DynamicButton
               >
             </div>
 
@@ -37,7 +37,7 @@
               >
               <br />
               <DynamicButton class="tp" @buttonPress="$emit('contact')"
-                >Click here to contact me
+                >click here to contact me
               </DynamicButton>
             </div>
           </div>
