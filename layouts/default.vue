@@ -12,7 +12,11 @@
           <div class="tp" v-html="markdown(content.largestBlock.subhead)"></div>
           <NuxtLink class="t6 resume_link" to="/resume">My Resume</NuxtLink>
         </div>
-        <img id="profile_pic" :src="displayPic(content.largestBlock.img.src)" />
+        <img
+          id="profile_pic"
+          alt=""
+          :src="displayPic(content.largestBlock.img.src)"
+        />
       </TT_OT>
     </Floater>
     <Badges
@@ -27,7 +31,6 @@
       :content="content.cta1"
       @press="aeOverride(2)"
     >
-      >
     </Cta>
     <Thoughts />
     <Floater :override="ae.inter" :scroll-location="scroll_location">

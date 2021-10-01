@@ -6,6 +6,7 @@
           class="logo"
           :class="{ logo_scroll: scrollLocation > 100 }"
           :src="displayPic(content.logo.src)"
+          :alt="content.logo.alt"
         />
       </div>
     </header>
