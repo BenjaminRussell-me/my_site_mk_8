@@ -10,7 +10,7 @@ export default {
   data() {
     return {
       content: `
-![](https://res.cloudinary.com/dzjvh0z3f/image/upload/v1633104487/giphy_she6sx.gif)
+![](ihttps://res.cloudinary.com/dzjvh0z3f/image/upload/v1633105854/thoughts/hug_xnmlbn.gif)
 
 Out of all the new-ish widely usable CSS tricks clamp has got to be one of my favorites.
 

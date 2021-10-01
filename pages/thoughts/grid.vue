@@ -10,7 +10,7 @@ export default {
   data() {
     return {
       content: `
-![](https://res.cloudinary.com/dzjvh0z3f/image/upload/v1633104681/vs_ghwcmj.gif)
+![](https://res.cloudinary.com/dzjvh0z3f/image/upload/v1633105850/thoughts/vs_fsihij.gif)
 
 When creating a layout with CSS it's not always immediately obvious which display rule to use, grid or flex.
 I think it becomes a little more clear if you explicitly list out my perceived strengths and weaknesses of each rule.
