@@ -18,7 +18,7 @@ I'll be honest. I have watched quite a few dev talks about CSS Houdini and I'm n
 #### So what is Houdini? 
 From what I understand Houdini is a low-level API for the browser's CSS engine. This API has multiple different parts that all do very different things.
 
-the list goes. 
+The list goes. 
 - Paint API (much like HTML canvas but within CSS)
 - Properties & Values API ("CSS variables with superpowers")
 - Typed OM (object-based API for working with CSS values in JavaScript)
