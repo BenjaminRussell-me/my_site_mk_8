@@ -26,7 +26,7 @@ I'm ready to grow and learn so I am currently looking for a new job and would lo
   badges: [
     {
       src: 'git.svg',
-      text: 'github',
+      text: 'fun github',
       link: 'https://github.com/BenjaminRussell-me',
     },
     {
@@ -36,7 +36,7 @@ I'm ready to grow and learn so I am currently looking for a new job and would lo
     },
     {
       src: 'git.svg',
-      text: 'professional GH',
+      text: 'work github',
       link: 'https://github.com/br-haa',
     },
     {

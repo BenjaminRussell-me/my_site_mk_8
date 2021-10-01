@@ -101,7 +101,7 @@
               <ul>
                 <li>Web & Multimedia - AAS</li>
                 <li>Graphic Design - AAS</li>
-                <li>First place trophy for website portfolio</li>
+                <li>First place trophy for web development portfolio</li>
               </ul>
             </div>
           </div>
@@ -111,9 +111,9 @@
               <h5>Hoglund Advertising and Analytics 2018 - Present</h5>
               <p><em>Web developer and designer</em></p>
               <ul>
-                <li>Create and manage internal Css framework</li>
+                <li>Create and manage internal CSS framework</li>
                 <li>
-                  Create and manage internal reusable javascript components
+                  Create and manage internal reusable JavaScript components
                 </li>
                 <li>Create and manage internal Apps</li>
                 <li>Design and create new landing page layouts</li>
