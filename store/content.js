@@ -90,14 +90,14 @@ I'm ready to grow and learn so I am currently looking for a new job and would lo
         tags: [`app`, `vue`],
       },
       {
-        title: `Custom Form Component`,
-        link: `/projects/form_component`,
-        tags: [`component`, `npm`, `vue`],
-      },
-      {
         title: `Landing Page Template`,
         link: `/projects/lp_template`,
         tags: [`nuxt`, `vue`],
+      },
+      {
+        title: `Custom Form Component`,
+        link: `/projects/form_component`,
+        tags: [`component`, `npm`, `vue`],
       },
     ],
   },
