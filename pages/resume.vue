@@ -116,7 +116,7 @@
                   Create and manage internal reusable JavaScript components
                 </li>
                 <li>Create and manage internal Apps</li>
-                <li>Design and create new landing page layouts</li>
+                <li>Design and create new landing page templates</li>
                 <li>
                   Research and create examples for how to switch our website
                   building stack to Vue.js
