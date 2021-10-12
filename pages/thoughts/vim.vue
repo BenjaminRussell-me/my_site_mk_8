@@ -13,11 +13,11 @@ export default {
       content: `
 ![](https://res.cloudinary.com/dzjvh0z3f/image/upload/v1633105852/thoughts/crazy_c9mlba.gif)
 
-First off I know things can get a bit sensitive around this topic. Back when trying to figure out if it was worth learning Vim in the first place the flame wars online you could find on the topic made political discussions look like puppies and rainbows. 
+First off I know things can get a bit sensitive around this topic. Back when trying to figure out if it was worth learning Vim in the first place the flame wars online you could find on what text editor or IDE to use made political discussions look like puppies and rainbows. 
 
 I do not feel that strongly about it. (please have mercy I have two cats that need me)
 
-I starting learning vim for a couple of reasons. I think like most people in the tech space I got stuck in vim by accident once. For me, it happened while trying to set up an after-market rack server I bought off of amazon. (Used for the most overkill home assistant hub ever, and also a pretty ballin Minecraft server). I then looked up how to escape the technological prison I had trapped myself in, used nano for my intended task, and didn't think about it again.
+I started learning vim for a couple of reasons. I think like most people in the tech space I got stuck in vim by accident once. For me, it happened while trying to set up an after-market rack server I bought off of amazon. (Used for the most overkill home assistant hub ever, and also a pretty ballin Minecraft server). I then looked up how to escape the technological prison I had trapped myself in, used nano for my intended task, and didn't think about it again.
 
 Until one of my favorite YouTubers posted [Vim in 100 Seconds](https://www.youtube.com/watch?v=-txKSRn0qeA). I was intrigued! So I installed the vim controls into VS code and started attempting to work. I soon discovered a problem, muscle memory. As much as I tried to not use arrow keys and the mouse if I was ever really getting into the flow of coding I would forget to use any of the vim bindings. I struggled with this for a while because I had found a new reason to keep using vim it helped with arm strain throughout the day!
 
