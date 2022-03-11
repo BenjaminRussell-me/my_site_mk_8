@@ -142,7 +142,7 @@
               (not my words, but I could give you the contact of the boss who said that about me.)
             </p>
             <p>
-              I'm ready for new experiances and would love to talk.
+              I'm ready for new experiences  and would love to talk.
             </p>
           </div>
         </div>

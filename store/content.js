@@ -13,9 +13,9 @@ Hello! 👋
 
 My name is Benjamin Russell. I am a Minneapolis-based developer.
 
-My specialties are creating reusable components for teams, making cool user interactions with SCSS and Typescript, Vue.js, and whatever interesting thing I'm trying to learn currently. (Pssst Rust and web assembly! Super cool and possibly the future of the web 😜).
+My specialties are creating reusable components for teams, making cool user interactions with SCSS and Typescript, Vue.js, and whatever interesting thing I'm trying to learn currently.
 
-I've worked the last three years at a small, fast-paced marketing company where I have (with a team and also single-handedly) made many apps, websites, and landing pages.
+I've worked most recently at a fast-paced marketing company where I have (with a team and also single-handedly) made many apps, websites, and landing pages.
 
 I'm always looking to grow and learn so if you have an interesting opportunity I'd love to talk.
 `,
