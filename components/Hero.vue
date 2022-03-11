@@ -11,7 +11,10 @@
       </div>
       <div class="hero_right">
         <div class="text_holder">
-          <h1 class="t1">my name is Benjamin</h1>
+          <h1 class="t1">My name is Benjamin</h1>
+          <h2 class="t5">I promise I'm great to work with!</h2>
+          <br>
+          <!--
           <p class="t4 dates">
             I have been a professional developer for
             <span class="date"> {{ date_time.year }} years,</span>
@@ -21,6 +24,7 @@
             <span class="date">{{ date_time.min }} minutes </span> and
             <span class="date"> {{ date_time.sec }} seconds.</span>
           </p>
+          -->
           <div class="gotos">
             <div class="gototext">
               <span class="tp">learn more about me? 👋</span>

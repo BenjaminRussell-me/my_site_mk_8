@@ -97,10 +97,9 @@
                 <li>Adobe Illustrator</li>
               </ul>
               <h3>Education</h3>
-              <p>DCTC - graduated 2018</p>
+              <p>DCTC: 2015 - 2018</p>
               <ul>
-                <li>Web & Multimedia - AAS</li>
-                <li>Graphic Design - AAS</li>
+                <li>Web & Multimedia / Graphic Design</li>
                 <li>First place trophy for web development portfolio</li>
               </ul>
             </div>
@@ -109,19 +108,18 @@
             <div>
               <h3>Experience</h3>
               <h5>Hoglund Advertising and Analytics 2018 - Present</h5>
-              <p><em>Web developer and designer</em></p>
+              <p><em>Web developer</em></p>
               <ul>
                 <li>Create and manage internal CSS framework</li>
                 <li>
                   Create and manage internal reusable JavaScript components
                 </li>
-                <li>Create and manage internal Apps</li>
+                <li>Create and manage internal Applications</li>
                 <li>Design and create new landing page templates</li>
                 <li>
                   Research and create examples for how to switch our website
                   building stack to Vue.js
                 </li>
-                <li>Asset and logo creation for clients that need it</li>
               </ul>
             </div>
             <div class="dualLineHolder">
@@ -133,18 +131,18 @@
           <div id="resumeAbout">
             <h3>About</h3>
             <p>
-              My name is Benjamin Russell. I am a 25-year-old Minneapolis-based
-              developer with three years of professional experience.
+              My name is Benjamin Russell. I am a Minneapolis-based
+              developer.
             </p>
 
             <p>
               My specialties are creating reusable components for teams, making
-              cool user interactions with SCSS and Typescript, Vue.js, and
-              whatever interesting thing I'm trying to learn currently.
+              cool user interactions, Vue.js, and
+              “utilizing my insatiable appetite to learn” 
+              (not my words, but I could give you the contact of the boss who said that about me.)
             </p>
             <p>
-              I'm ready to grow and learn so I am currently looking for a new
-              job and would love to talk.
+              I'm ready for new experiances and would love to talk.
             </p>
           </div>
         </div>

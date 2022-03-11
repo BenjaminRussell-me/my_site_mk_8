@@ -4,14 +4,14 @@ export const state = () => ({
   },
   hero: {
     portrait: { src: 'hero.png', alt: 'background' },
-    left: `hey! how's it going?`,
+    left: `Hey! How's it going?`,
   },
   largestBlock: {
-    headline: `about me`,
+    headline: `About me`,
     subhead: `
 Hello! 👋
 
-My name is Benjamin Russell. I am a 25-year-old Minneapolis-based developer with three years of professional experience.
+My name is Benjamin Russell. I am a Minneapolis-based developer.
 
 My specialties are creating reusable components for teams, making cool user interactions with SCSS and Typescript, Vue.js, and whatever interesting thing I'm trying to learn currently. (Pssst Rust and web assembly! Super cool and possibly the future of the web 😜).
 
@@ -56,7 +56,7 @@ I'm always looking to grow and learn so if you have an interesting opportunity I
   },
 
   fresh: {
-    headline: `interests`,
+    headline: `Interests`,
     list: [
       `programming 💻`,
       `design 📝`,
@@ -76,13 +76,13 @@ I'm always looking to grow and learn so if you have an interesting opportunity I
   },
 
   help: {
-    headline: `thanks for stopping by!`,
-    subhead: `contact info is down there 👇`,
+    headline: `Thanks for stopping by!`,
+    subhead: `Contact info is down there 👇`,
   },
   copyright: `Benjamin Russell`,
 
   projects: {
-    title: 'projects',
+    title: 'Projects',
     items: [
       {
         title: `Pinned Map App`,
@@ -102,7 +102,7 @@ I'm always looking to grow and learn so if you have an interesting opportunity I
     ],
   },
   thoughts: {
-    title: 'thoughts',
+    title: 'Thoughts',
     items: [
       {
         title: `Why I ♥ clamp`,
