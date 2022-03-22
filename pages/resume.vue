@@ -90,17 +90,19 @@
               <ul>
                 <li>Javascript</li>
                 <li>Typescript</li>
-                <li>SCSS</li>
-                <li>Semantic HTML</li>
                 <li>Vue.js</li>
                 <li>GraphQL</li>
-                <li>Adobe Illustrator</li>
+                <li>React</li>
+                <li>AWS</li>
+                <li>SCSS</li>
+                <li>Semantic HTML</li>
+                <li>Wordpress</li>
+                <li>Docker</li>
               </ul>
               <h3>Education</h3>
               <p>DCTC: 2015 - 2018</p>
               <ul>
                 <li>Web & Multimedia / Graphic Design</li>
-                <li>First place trophy for web development portfolio</li>
               </ul>
             </div>
           </div>
@@ -300,7 +302,7 @@ ul {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto 1fr auto;
   grid-column-gap: 1rem;
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
   box-sizing: border-box;
 }
 #resumeTop {
