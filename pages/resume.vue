@@ -94,9 +94,8 @@
                 <li>GraphQL</li>
                 <li>React</li>
                 <li>AWS</li>
-                <li>SCSS</li>
+                <li>SCSS / HTML</li>
                 <li>Node JS</li>
-                <li>Semantic HTML</li>
                 <li>Wordpress</li>
                 <li>Docker</li>
               </ul>
