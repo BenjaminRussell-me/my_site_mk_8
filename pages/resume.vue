@@ -95,6 +95,7 @@
                 <li>React</li>
                 <li>AWS</li>
                 <li>SCSS</li>
+                <li>Node JS</li>
                 <li>Semantic HTML</li>
                 <li>Wordpress</li>
                 <li>Docker</li>
