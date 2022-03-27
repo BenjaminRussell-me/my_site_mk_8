@@ -17,43 +17,6 @@
             <div class="line bg1"></div>
           </div>
           <div id="resumeLogoHolder">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 246.75 284.19"
-            >
-              <defs>
-                <linearGradient
-                  id="logoGradient"
-                  y1="212.59"
-                  x2="246.75"
-                  y2="71.6"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop offset="0" stop-color="#448abf" />
-                  <stop offset="0.61" stop-color="#44a6af" />
-                  <stop offset="1" stop-color="#44bba3" />
-                </linearGradient>
-              </defs>
-              <g id="Layer_2" data-name="Layer 2">
-                <g id="Layer_1-2" data-name="Layer 1">
-                  <path
-                    class="cls-1"
-                    d="M123.94,15,233.72,79l-.57,127.09L122.81,269.18,13,205.14,13.6,78.06,123.94,15M124,0l-6.52,3.72L7.15,66.77.64,70.5.6,78,0,205.09l0,7.5,6.48,3.78,109.78,64,6.48,3.78,6.52-3.72L239.6,217.42l6.51-3.73,0-7.5.57-127.09,0-7.5-6.48-3.78-109.78-64L124,0Z"
-                  />
-                  <path
-                    class="cls-2"
-                    d="M123.78,275,9,208,9.61,75.15,125,9.24,239.73,76.18,239.14,209ZM19.05,202.28,123.83,263.4l105.33-60.18.54-121.31L124.92,20.78,19.59,81Z"
-                  />
-                  <path
-                    class="cls-2"
-                    d="M185.83,165.09a63,63,0,0,1-121.91,0Z"
-                  />
-                  <circle class="cls-2" cx="184.88" cy="116.09" r="17" />
-                  <circle class="cls-2" cx="64.88" cy="115.09" r="17" />
-                </g>
-              </g>
-            </svg>
             <div class="line bg2"></div>
           </div>
         </div>
@@ -133,18 +96,13 @@
           <div id="resumeAbout">
             <h3>About</h3>
             <p>
-              My name is Benjamin Russell. I am a Minneapolis-based
-              developer.
+              I am a young professional developer / engineer / autonomous code bot hailing from Minnesota.
+
+If you need something conjured, designed, or constructed through the medium of code, I'm your guy! I'm extremely confident in my abilities in most modern web technologies and the only thing I'm more confident in is my ability to learn quickly and on the fly.
             </p>
 
             <p>
-              My specialties are creating reusable components for teams, making
-              cool user interactions, Vue.js, and
-              “utilizing my insatiable appetite to learn” 
-              (not my words, but I could give you the contact of the boss who said that about me.)
-            </p>
-            <p>
-              I'm ready for new experiences  and would love to talk.
+If your company has interesting tech problems to solve and possibly a touch of design needed then please contact me! I'd love to talk!
             </p>
           </div>
         </div>
